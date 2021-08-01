@@ -119,7 +119,7 @@
             </v-timeline-item>
             <v-timeline-item large>
               <template v-slot:opposite>
-                <span class="date">January 2019 - May 2019</span>
+                <span class="date">June 2018 - August 2018</span>
               </template>
               <v-card class="elevation-2">
                 <v-card-title class="header"
@@ -148,7 +148,7 @@
             <v-card class="mx-auto my-12" width="400">
               <v-img
                 height="150"
-                src="https://cdn.vuetifyjs.com/images/cards/cooking.png"
+                src="../assets/seivom2.png"
               >
               </v-img>
               <v-card-title>Seivom</v-card-title>
