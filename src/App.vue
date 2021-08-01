@@ -1,28 +1,59 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app>
+    <v-app-bar app flat hide-on-scroll>
+      <div class="d-flex align-flex-start">
+        <v-toolbar-title>
+          <h3 class="header">Ryan Diaz</h3>
+        </v-toolbar-title>
+        <v-btn text to="/about" class="menu-btn" href="#about">About Me</v-btn>
+        <v-btn text to="/experience" class="menu-btn" href="#experience"
+          >Experience</v-btn
+        >
+        <v-btn text to="/projects" class="menu-btn" href="#projects"
+          >Projects</v-btn
+        >
+      </div>
+      <v-spacer></v-spacer>
+      <v-btn to="/contact" class="menu-btn" outlined> Contact me! </v-btn>
+    </v-app-bar>
+    <v-main>
+      <Main />
+    </v-main>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import VueRouter from 'vue-router'
+import Main from './components/Main'
 
 export default {
   name: 'App',
+
   components: {
-    HelloWorld
-  }
+    Main
+    // VueRouter,
+  },
+
+  data: () => ({})
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style scoped>
+@font-face {
+  font-family: Alata;
+  src: url('../public/Alata-Regular.ttf');
+}
+@font-face {
+  font-family: NotoSerif-SemiBold;
+  src: url('../public/NotoSerifJP-SemiBold.otf');
+}
+@font-face {
+  font-family: NotoSerif-Light;
+  src: url('../public/NotoSerifJP-Light.otf');
+}
+.header {
+  font-family: NotoSerif-SemiBold;
+}
+.menu-btn {
+  font-family: NotoSerif-Light;
 }
 </style>
