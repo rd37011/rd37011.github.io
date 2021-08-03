@@ -5,11 +5,11 @@
         <v-toolbar-title>
           <h3 class="header">Ryan Diaz</h3>
         </v-toolbar-title>
-        <v-btn text to="/about" class="menu-btn" href="#about">About Me</v-btn>
-        <v-btn text to="/experience" class="menu-btn" href="#experience"
+        <v-btn text to="#about" class="menu-btn" href="#about">About Me</v-btn>
+        <v-btn text to="#experience" class="menu-btn" href="#experience"
           >Experience</v-btn
         >
-        <v-btn text to="/projects" class="menu-btn" href="#projects"
+        <v-btn text to="#projects" class="menu-btn" href="#projects"
           >Projects</v-btn
         >
       </div>
@@ -30,7 +30,7 @@ export default {
   name: 'App',
 
   components: {
-    Main
+    Main,
     // VueRouter,
   },
 
@@ -55,5 +55,8 @@ export default {
 }
 .menu-btn {
   font-family: NotoSerif-Light;
+}
+.menu-btn_active::before {
+  background-color: transparent;
 }
 </style>

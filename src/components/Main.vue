@@ -26,7 +26,7 @@
           Miami in 2019 with a Bachelor's of Science degree in Computer Science,
           with minors in Mathematics and Japanese. Currently based out of Tampa,
           Florida. I have a variety of interests beyond CS, including travel,
-          soccer (come on you Gunners!) history (specifically Japanese /
+          soccer (COYG) history (specifically Japanese /
           European), cars, horology, gaming, and cooking.
         </v-row>
       </v-col>
@@ -35,6 +35,11 @@
         <v-row justify="center">
           <v-timeline>
             <v-timeline-item large>
+              <template v-slot:icon>
+                <v-avatar>
+                  <img src='../assets/company-assets/c1.png'/>
+                </v-avatar>
+             </template>
               <template v-slot:opposite>
                 <span class="date">July 2020 - Present</span>
               </template>
@@ -46,7 +51,19 @@
                 <v-card-text>
                   <ul class="ul-align">
                     <li>
-                      Currently use Node, Vue and inner-sourced tools to create
+                       Utilized Node and Angular with Django to build out web forms with the ability to create and
+update entries, leveraging the Enterprise GitHub API to automate issue creation, thereby
+shortening a days-long process to a few hours.
+                    </li>
+                    <li>
+                      Providing technical leadership to TIP interns by conducting code reviews, reviewing PRs, devising
+application architecture, and helping them to grow by exposing them to new technologies.
+                    </li>
+                     <li>
+                      Acted as an internal front-end consultant to other teams in the organization, and helped them to create functional, extensible web platforms.
+                    </li>
+                    <li>
+                      Utilized Node, Vue and inner-sourced tools to create
                       responsive, user friendly web pages with VueX for state
                       management, and leveraging eAPIs to facilitate and deliver
                       good UX under a federated model.
@@ -56,15 +73,18 @@
                       performance test critical APIs.
                     </li>
                     <li>
-                      Leveraged AWS SDK to build lambdas in Python to assist
-                      with cyber compliance issues, collectively saving weeks of
-                      work to delete non compliant snapshots.
+                      Led efforts to accessibility test to ensure compliance to WCAG and equal accessibility to our site.
                     </li>
                   </ul>
                 </v-card-text>
               </v-card>
             </v-timeline-item>
             <v-timeline-item large>
+                <template v-slot:icon>
+                <v-avatar>
+                  <img src='../assets/company-assets/c1.png'/>
+                </v-avatar>
+             </template>
               <template v-slot:opposite>
                 <span class="date">August 2019 - July 2020</span>
               </template>
@@ -88,11 +108,21 @@
                       debugging vis-a-vis Amazon Lex, and saving development
                       time.
                     </li>
+                    <li>
+                      Built lambdas in Python to assist
+                      with AWS DB compliance issues, collectively saving weeks of
+                      work to delete non compliant snapshots.
+                    </li>
                   </ul>
                 </v-card-text>
               </v-card>
             </v-timeline-item>
             <v-timeline-item large>
+              <template v-slot:icon>
+                <v-avatar>
+                  <img src='../assets/company-assets/tf.png'/>
+                </v-avatar>
+             </template>
               <template v-slot:opposite>
                 <span class="date">January 2019 - May 2019</span>
               </template>
@@ -118,6 +148,11 @@
               </v-card>
             </v-timeline-item>
             <v-timeline-item large>
+             <template v-slot:icon>
+                <v-avatar>
+                  <img src='../assets/company-assets/jpmc.png'/>
+                </v-avatar>
+             </template>
               <template v-slot:opposite>
                 <span class="date">June 2018 - August 2018</span>
               </template>
@@ -168,22 +203,24 @@
             </v-card>
             <v-card class="mx-auto my-12" max-width="400">
               <v-img
-                height="250"
+                height="150"
                 src="https://cdn.vuetifyjs.com/images/cards/cooking.png"
               ></v-img>
 
-              <v-card-title>HealthChainz</v-card-title>
+              <v-card-title>Recipesource</v-card-title>
 
               <v-card-text>
                 <v-row align="center" class="mx-0"> </v-row>
 
                 <div>
-                  Incredibly technical, very cool. Much blockchain. This is some
-                  filler description. More random crap.
+                  A crowdsourcing site to aggregate the best tips on recipes. 
+                  Coming soon!
                 </div>
               </v-card-text>
             </v-card>
           </div>
+          <v-divider></v-divider>
+
         </v-row>
       </v-col>
     </v-row>
