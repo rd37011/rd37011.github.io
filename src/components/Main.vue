@@ -220,7 +220,34 @@ application architecture, and helping them to grow by exposing them to new techn
             </v-card>
           </div>
           <v-divider></v-divider>
-
+          <v-col class="mb-5" cols="12">
+            <h2 id="projects" class="font-weight-bold mb-3">Contact me:</h2>
+            <v-row class="contact-container">
+          <v-card
+            class="mx-auto"
+            max-width="400"
+            tile
+          >
+            <v-list-item three-line>
+              <v-list-item-content>
+                <v-list-item-title>Email me here:</v-list-item-title>
+                <v-list-item-subtitle>
+                  rd37011@gmail.com
+                </v-list-item-subtitle>
+                <v-list-item-subtitle>
+                  or my alternate email: rxd234@miami.edu
+                </v-list-item-subtitle>
+              </v-list-item-content>
+            </v-list-item>
+                          <v-list-item two-line>
+      <v-list-item-content>
+        <v-list-item-title>This page is still under construction! </v-list-item-title>
+        <v-list-item-subtitle>Please check back later :)</v-list-item-subtitle>
+      </v-list-item-content>
+    </v-list-item>
+          </v-card>
+          </v-row>
+          </v-col>
         </v-row>
       </v-col>
     </v-row>
@@ -275,5 +302,6 @@ h3 {
 }
 .projects-container {
   display: contents;
+  font-family: NotoSerif-Light;
 }
 </style>
