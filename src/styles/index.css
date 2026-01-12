@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Font Faces */
+@font-face {
+  font-family: 'Alata';
+  src: url('/fonts/Alata-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NotoSerif-Black';
+  src: url('/fonts/NotoSerifJP-Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NotoSerif-Bold';
+  src: url('/fonts/NotoSerifJP-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NotoSerif-SemiBold';
+  src: url('/fonts/NotoSerifJP-SemiBold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NotoSerif-Medium';
+  src: url('/fonts/NotoSerifJP-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NotoSerif-Regular';
+  src: url('/fonts/NotoSerifJP-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NotoSerif-Light';
+  src: url('/fonts/NotoSerifJP-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NotoSerif-ExtraLight';
+  src: url('/fonts/NotoSerifJP-ExtraLight.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+/* Base Styles */
+body {
+  margin: 0;
+  font-family: 'NotoSerif-Regular', serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
